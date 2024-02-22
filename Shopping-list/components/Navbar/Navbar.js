@@ -15,7 +15,10 @@ function Navbar({ tabs, onTabPress }) {
       {tabs.map((tab, index) => (
         <TouchableOpacity
           key={index}
-          style={[styles.tab, index === selectedTab && styles.selectedTab]}
+          style={[
+            styles.tab,
+            tabs[index] === selectedTab && styles.selectedTab,
+          ]}
           onPress={() => handleTabPress(index)}
         >
           <Text style={styles.tabText}>{tab}</Text>

@@ -12,6 +12,8 @@ export const styles = StyleSheet.create({
   },
   tab: {
     padding: 10,
+    width: 100,
+    alignItems: "center",
   },
   selectedTab: {
     backgroundColor: "#ddd",
