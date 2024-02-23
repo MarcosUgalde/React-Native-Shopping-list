@@ -4,8 +4,9 @@ import List from "./components/List";
 import { useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Settings from "./components/Settings";
+import Recomendations from "./components/Recomendations";
 
-const tabs = ["List", "Settings"];
+const tabs = ["List", "Recomendations", "Settings"];
 
 export default function App() {
   const [activeTab, setActiveTab] = useState("List");
@@ -18,6 +19,8 @@ export default function App() {
     switch (activeTab) {
       case "List":
         return <List />;
+      case "Recomendations":
+        return <Recomendations />;
       case "Settings":
         return <Settings />;
       default:
